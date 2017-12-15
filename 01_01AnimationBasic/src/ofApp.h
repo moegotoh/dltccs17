@@ -20,7 +20,13 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
+
+    static const int num = 400;
+    vector<ofVec3f> location;
+    vector<ofVec3f> velocity;
+    vector<ofColor> color;
     
-    float locationX; // X座標の位置
-    float locationY; // Y座標の位置
+    int count;
+    int MAX = 200;
+    
 };

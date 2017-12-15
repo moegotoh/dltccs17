@@ -21,9 +21,9 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    static const int NUM = 100; //配列の最大数を定数として定義
+    static const int num = 50;
+    ofVec3f location[num];
+    ofVec3f velocity[num];
+    ofColor color[num];
     
-    //配列を定義
-    ofVec2f location[NUM]; //NUM個の位置ベクトル
-    ofVec2f velocity[NUM]; //NUM個の速度ベクトル
 };
